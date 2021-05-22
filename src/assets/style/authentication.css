@@ -1,0 +1,55 @@
+.signup_container {
+  background: #e5e5e5;
+  height: 100%;
+}
+.signup_container .leftImg {
+  background-image: url("../images/signupImg.png");
+  background-size: cover;
+  height: 770px;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.signup_container .loginLeftImg {
+  background-image: url("../images/loginImg.png");
+  background-size: cover;
+  height: 770px;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.signup_container .authetication_input_container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.signup_container
+  .authetication_input_container
+  .ant-col.ant-form-item-control {
+  width: 100%;
+}
+.signup_container
+  .authetication_input_container
+  .ant-form-item-control-input-content
+  .ant-input {
+  padding: 10px;
+  margin: 3px 0px;
+}
+.signup_container .ant-form-item {
+  margin-bottom: 10px !important;
+}
+.signup_container
+  .authetication_input_container
+  .ant-form-item-label
+  > label::after {
+  content: none;
+}
+
+.signup_container .authetication_input_container .ant-form-item-label > label {
+  color: #0f123f !important;
+  font-size: 16px !important;
+}
+
+.signup_container .security_icon_container img {
+  height: 40px;
+}
