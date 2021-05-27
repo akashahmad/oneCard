@@ -1,0 +1,15 @@
+.dashboard_container .side_nav_container {
+  background: #0f123f;
+}
+.dashboard_container .side_nav_container .profile_info_container img {
+  height: 50px;
+}
+.dashboard_container .right_side_section_container {
+  border-top: 12px solid #0f123f;
+  border-bottom: 12px solid #0f123f;
+  border-right: 12px solid #0f123f;
+}
+.dashboard_container .right_side_section_container .background_clr_sections {
+  background: #f0eff5;
+  height: 100%;
+}

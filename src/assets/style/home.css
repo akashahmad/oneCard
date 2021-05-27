@@ -1,0 +1,144 @@
+.managing_creditCard_container {
+  /* background: linear-gradient(180deg, #cae7f1 0%, rgba(202, 231, 241, 0) 100%); */
+  background-image: url("../images/manageCreditCard.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.managing_creditCard_container .bottom_bar_container {
+  background: linear-gradient(
+    90.66deg,
+    #94b7c3 0.5%,
+    rgba(79, 117, 128, 0.78) 29.86%,
+    #8fb2be 99.64%
+  );
+  z-index: 1;
+}
+
+.managing_creditCard_container .rounded_img_container img {
+  height: 150px;
+  position: absolute;
+  margin: 40px 0px 0px -93px;
+}
+
+.managing_creditCard_container .right_side_cardsImg img {
+  position: absolute;
+  height: 400px;
+  right: 0;
+  margin: -225px 110px 0px 0px;
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+  .home_container .managing_creditCard_container .right_side_cardsImg img {
+    position: absolute;
+    height: 180px;
+    right: auto;
+    margin: -25px 0px 0px -84px;
+  }
+}
+
+.home_container .home_feature_container {
+  background: #f0fbff;
+}
+
+.home_container .payInfo_cards_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+  .home_container .payInfo_cards_container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.home_feature_container .featured_list_container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+@media (max-width: 991px) and (min-width: 320px) {
+  .home_feature_container .featured_list_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_feature_container .featured_list_container h4,
+  p {
+    text-align: center;
+  }
+  .home_feature_container .featured_list_container .small_icon_container img {
+    width: 50px;
+    height: 50px;
+  }
+  .home_feature_container .featured_list_container .icon_container,
+  .small_icon_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    width: inherit;
+  }
+}
+
+.home_container .security_detail_container {
+  background-image: url("../images/securityDetail.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home_container
+  .security_detail_container
+  .security_icon_Detail
+  .left_icon_container {
+  background: #cbdfe9;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+  .home_container
+    .security_detail_container
+    .security_icon_Detail
+    .left_icon_container {
+    background: #a8b9c0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+.home_container .security_detail_container .security_icon_Detail {
+  display: flex;
+  background-color: #a8b9c0;
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+  .home_container .security_detail_container .security_icon_Detail {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.home_container .feedback_container {
+  background: #ecf8fc;
+}
+
+.home_container .feedback_container .react-multi-carousel-list {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.home_container .feedback_container .box_below_Carousal {
+  width: 70%;
+  background: #fff;
+}
+
+.home_container .feedback_container .box_below_Carousal img {
+  position: absolute;
+}
+
+.home_container .feedback_container ul.react-multi-carousel-track {
+  width: 70%;
+}

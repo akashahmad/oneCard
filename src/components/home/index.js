@@ -1,4 +1,18 @@
+import ManagingCreditCard from "./managingCreditCard";
+import FeaturesComponent from "./features";
+import PayInfo from "./payInfo";
+import Feedbacks from "./feedbacks";
+import SecurityDetail from "./securityDetail";
+
 const Home = () => {
-  return <div className="container mx-auto"></div>;
+  return (
+    <div className="home_container">
+      <ManagingCreditCard />
+      <FeaturesComponent />
+      <PayInfo />
+      <Feedbacks />
+      <SecurityDetail />
+    </div>
+  );
 };
 export default Home;

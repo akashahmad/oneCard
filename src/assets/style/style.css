@@ -1,7 +1,8 @@
 @import "./authentication.css";
 @import "./colors.css";
 @import "./layout.css";
-
+@import "./home.css";
+@import "./dashboard.css";
 body {
   font-family: "Poppins", sans-serif !important;
   margin: 0px;
