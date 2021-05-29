@@ -2,7 +2,7 @@ import Logo from "../../assets/images/Logo.png";
 
 const Header = () => {
   return (
-    <div className="flex justify-center py-2">
+    <div className="flex justify-center pt-2 pb-3">
       <img src={Logo} alt="" />
     </div>
   );

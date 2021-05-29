@@ -4,12 +4,73 @@
 .dashboard_container .side_nav_container .profile_info_container img {
   height: 50px;
 }
+
+.dashboard_container .side_nav_container .sidenav_links_info_container img {
+  height: 25px;
+}
+
+.dashboard_container .side_nav_container .sidenav_links_info_container img {
+  height: 25px;
+}
+
+.dashboard_container
+  .side_nav_container
+  .sidenav_links_info_container
+  .active_link {
+  background: #4349a9;
+  border-radius: 8px;
+}
+
+.dashboard_container
+  .side_nav_container
+  .sidenav_links_info_container
+  .inActive_link:hover {
+  background: #4349a9;
+  border-radius: 8px;
+}
+
 .dashboard_container .right_side_section_container {
   border-top: 12px solid #0f123f;
   border-bottom: 12px solid #0f123f;
   border-right: 12px solid #0f123f;
 }
+@media (max-width: 991px) and (min-width: 320px) {
+  .dashboard_container .right_side_section_container {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+  }
+}
 .dashboard_container .right_side_section_container .background_clr_sections {
   background: #f0eff5;
   height: 100%;
+}
+
+.dashboard_container .react-multi-carousel-list {
+  padding: 20px 10px;
+}
+.dashboard_container .add_card_header .left_info img {
+  height: 22px;
+}
+.dashboard_container .overview_section_container .single_overview_box {
+  width: 48%;
+}
+.dashboard_container .left_side_component_width {
+  width: 67%;
+}
+.dashboard_container .right_side_component_width {
+  width: 30%;
+}
+@media (max-width: 991px) and (min-width: 320px) {
+  .dashboard_container .left_side_component_width {
+    width: 100%;
+  }
+  .dashboard_container .right_side_component_width {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) and (min-width: 320px) {
+  .dashboard_container .overview_section_container .single_overview_box {
+    width: 100%;
+  }
 }
