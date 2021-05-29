@@ -1,4 +1,4 @@
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route , withRouter} from "react-router-dom";
 import Home from "./container/home";
 import SignUp from "./container/signup";
 import Login from "./container/login";
@@ -14,4 +14,4 @@ const Routes = () => {
     </Switch>
   );
 };
-export default Routes;
+export default withRouter(Routes);

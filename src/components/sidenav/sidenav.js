@@ -4,8 +4,10 @@ import Profile from "../../assets/images/Group-27202.png";
 import Feedback from "../../assets/images/calendar.png";
 import Setting from "../../assets/images/Group27257.png";
 import Logout from "../../assets/images/power.png";
+import { withRouter } from "react-router-dom";
 
-const SideNav = () => {
+const SideNav = (props) => {
+  let { history } = props;
   return (
     <div className="hidden lg:block xl:block w-1/12">
       <div className="w-full side_nav_container w-1/12 primary_bg_dark_clr py-8 h-full">
@@ -54,16 +56,21 @@ const SideNav = () => {
           </div>
         </div>
         {/* logout */}
-        <div className="flex flex-col items-center justify-center py-2 sidenav_links_info_container cursor-pointer">
-            <div className="inActive_link px-3 py-3">
-              <img src={Logout} alt="" />
-            </div>
-            <div>
-              <h5 className="text-sm text-white py-4 font-normal">Logout</h5>
-            </div>
+        <div
+          className="flex flex-col items-center justify-center py-2 sidenav_links_info_container cursor-pointer"
+          onClick={() => {
+            history.push("/");
+          }}
+        >
+          <div className="inActive_link px-3 py-3">
+            <img src={Logout} alt="" />
           </div>
+          <div>
+            <h5 className="text-sm text-white py-4 font-normal">Logout</h5>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
-export default SideNav;
+export default withRouter(SideNav);

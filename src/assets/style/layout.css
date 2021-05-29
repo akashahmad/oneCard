@@ -1,6 +1,14 @@
 .header_container {
   background: #cce7f1;
 }
+.header_container .primary_signup_btn {
+  border: 1px solid #333269;
+  color: #333269;
+  background: #cce7f1;
+}
+.header_container .primary_signup_btn :hover {
+  background: #333269;
+}
 .footer_container {
   background: #f0fbff;
 }

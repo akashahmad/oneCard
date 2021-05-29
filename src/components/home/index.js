@@ -3,6 +3,7 @@ import FeaturesComponent from "./features";
 import PayInfo from "./payInfo";
 import Feedbacks from "./feedbacks";
 import SecurityDetail from "./securityDetail";
+import {withRouter} from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -15,4 +16,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default withRouter(Home);

@@ -1,5 +1,6 @@
 import Header from "../header/header";
 import Footer from "../footer/footer";
+import {withRouter} from 'react-router-dom'
 
 const Layout = (props) => {
   return (
@@ -10,4 +11,4 @@ const Layout = (props) => {
     </>
   );
 };
-export default Layout;
+export default withRouter(Layout);

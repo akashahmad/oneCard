@@ -3,8 +3,10 @@ import BlackLogo from "../../assets/images/Logo.png";
 import GoogleIcon from "../../assets/images/google_icon.png";
 import SecurityIcon from "../../assets/images/Group-27205.png";
 import { Form, Input } from "antd";
+import { withRouter } from "react-router-dom";
 
-const SignUp = () => {
+const SignUp = (props) => {
+  let { history } = props;
   const onFinish = (values) => {};
   const onFinishFailed = (errorInfo) => {};
 
@@ -107,12 +109,22 @@ const SignUp = () => {
                 </Form.Item>
                 {/* Sign up button */}
                 <div className="w-full py-4">
-                  <button className="primary_bg_dark_clr py-3 flex justify-center w-full text-lg text-white items-center">
+                  <button
+                    className="primary_bg_dark_clr py-3 flex justify-center w-full text-lg text-white items-center"
+                    onClick={() => {
+                      history.push("/login");
+                    }}
+                  >
                     <span className="px-3">Sign Up</span>
                   </button>
                 </div>
                 {/* already have an account text */}
-                <p className="text-base  text-center py-2">
+                <p
+                  className="text-base  text-center py-2"
+                  onClick={() => {
+                    history.push("/login");
+                  }}
+                >
                   Already have account?{" "}
                   <span className="font-medium primary_clr">SIGN IN</span>
                 </p>
@@ -131,4 +143,4 @@ const SignUp = () => {
     </div>
   );
 };
-export default SignUp;
+export default withRouter(SignUp);

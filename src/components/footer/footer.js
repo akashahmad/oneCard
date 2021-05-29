@@ -2,6 +2,7 @@ import Logo from "../../assets/images/Logo.png";
 import Instagram from "../../assets/images/instagram.png";
 import Twitter from "../../assets/images/twitter.png";
 import Facebook from "../../assets/images/instagram.png";
+import { withRouter } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -31,4 +32,4 @@ const Footer = () => {
     </div>
   );
 };
-export default Footer;
+export default withRouter(Footer);

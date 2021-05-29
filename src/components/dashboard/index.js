@@ -6,6 +6,7 @@ import Transactions from "./transactionRecords";
 import Recomendation from "./recomendations";
 import MissedRewards from "./missedRewards";
 import RewardEarn from "./rewardEarn";
+import { withRouter } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -41,4 +42,4 @@ const Dashboard = () => {
     </div>
   );
 };
-export default Dashboard;
+export default withRouter(Dashboard);

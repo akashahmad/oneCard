@@ -1,4 +1,4 @@
-import {Switch, Route} from 'react-router-dom'
+import {Switch, Route , withRouter} from 'react-router-dom'
 import Routes from './routes'
 import 'antd/dist/antd.css'; 
 import './assets/style/style.css'
@@ -13,4 +13,4 @@ const App=()=>{
     </Switch>
   )
 }
-export default App;
+export default withRouter(App);
