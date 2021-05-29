@@ -1,10 +1,15 @@
+import { useState } from "react";
 import HomeComponent from "../../components/home";
 import Layout from "../../components/layout";
 
 const Home = () => {
+  const [homeSideNav, setHomeSideNav] = useState(false);
   return (
-    <Layout>
-      <HomeComponent />
+    <Layout setHomeSideNav={setHomeSideNav}>
+      <HomeComponent
+        homeSideNav={homeSideNav}      
+        setHomeSideNav={setHomeSideNav}
+      />
     </Layout>
   );
 };

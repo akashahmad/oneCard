@@ -81,6 +81,17 @@
   }
 }
 
+.home_feature_container .carousel .control-dots .dot {
+  margin: 5px 8px !important;
+}
+.home_feature_container ul.control-dots {
+  display: flex !important;
+  flex-direction: column !important;
+  right: 0 !important;
+  left: 95% !important;
+  margin: 0px 0px 250px 0px !important;
+}
+
 .home_container .security_detail_container {
   background-image: url("../images/securityDetail.png");
   background-size: cover;

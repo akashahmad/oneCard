@@ -8,9 +8,11 @@ const PayInfo = () => {
       <div className="payInfo_cards_container py-12">
         {/* left side */}
         <div className="w-full w-3/12 flex flex-col items-center px-4">
-          <img src={PayAndSaveImg} alt="" />
-          <h4 className="text-1xl primary_clr font-bold lg:text-left xl:text-left py-2">
-            Always Pay With The Right Card
+          <div className="ml-5">
+            <img src={SmartPhone} alt="" />
+          </div>
+          <h4 className="text-lg primary_clr font-bold lg:text-left xl:text-left py-2">
+            Connect
           </h4>
           <p className="text-center py-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -19,9 +21,11 @@ const PayInfo = () => {
         </div>
         {/* center */}
         <div className="w-full w-3/12 flex flex-col items-center px-4">
-          <img src={SmartPhone} alt="" />
-          <h4 className="text-1xl primary_clr font-bold lg:text-left xl:text-left py-2">
-            Always Pay With The Right Card
+          <div className="ml-5">
+            <img src={PaymentMethodImg} alt="" />
+          </div>
+          <h4 className="text-lg primary_clr font-bold lg:text-left xl:text-left py-2">
+            Pay
           </h4>
           <p className="text-center py-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -30,9 +34,9 @@ const PayInfo = () => {
         </div>
         {/* right side */}
         <div className="w-full w-3/12 flex flex-col items-center px-4">
-          <img src={PaymentMethodImg} alt="" />
-          <h4 className="text-1xl primary_clr font-bold lg:text-left xl:text-left py-2">
-            Always Pay With The Right Card
+          <img src={PayAndSaveImg} alt="" />
+          <h4 className="text-lg primary_clr font-bold lg:text-left xl:text-left py-2">
+            Save
           </h4>
           <p className="text-center py-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

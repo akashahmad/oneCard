@@ -47,20 +47,20 @@ const RewardEarn = () => {
       <div className="add_card_header py-2 flex justify-between">
         {/* left-side */}
         <div className="flex items-center left_info">
-          <h4 className="primary_clr text-md font-semibold pr-2">
+          <h4 className="primary_clr text-xs xl:text-md lg:text-md font-semibold pr-2">
             Missed Reward ($)
           </h4>
           <img src={InfoIcon} alt="" />
         </div>
         {/* right side */}
         <div className="flex items-center left_info">
-          <h4 className="primary_clr text-md font-semibold px-2">
+          <h4 className="primary_clr text-xs xl:text-md lg:text-md font-semibold px-2">
             Total Earn:<span className="font-bold">$2000</span>
           </h4>
         </div>
       </div>
       <div>
-        <Chart options={state.options} series={state.series} height={200} />
+        <Chart options={state.options} series={state.series} height={150} />
       </div>
     </div>
   );

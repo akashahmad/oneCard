@@ -1,11 +1,12 @@
 import Header from "../header/header";
 import Footer from "../footer/footer";
-import {withRouter} from 'react-router-dom'
+import { withRouter } from "react-router-dom";
 
 const Layout = (props) => {
+  let { setHomeSideNav } = props;
   return (
     <>
-      <Header />
+      <Header setHomeSideNav={setHomeSideNav} />
       {props.children}
       <Footer />
     </>

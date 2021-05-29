@@ -10,10 +10,10 @@ const AddCard = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-        breakpoint: { max: 3000, min: 1024 },
-        items: 5,
-    //   breakpoint: { max: 1000, min: 464 },
-    //   items: 4,
+      breakpoint: { max: 3000, min: 1024 },
+      items: 5,
+      //   breakpoint: { max: 1000, min: 464 },
+      //   items: 4,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -33,14 +33,18 @@ const AddCard = () => {
       {/* header */}
       <div className="add_card_header py-2 flex justify-between">
         {/* left-side */}
-        <div className="flex items-center left_info">
+        <div className="flex items-center left_info justify-center w-full lg:w-auto xl:w-auto lg:justify-start xl:justify-start">
           <h4 className="primary_clr text-2xl font-semibold px-2">CARDS</h4>
           <img src={InfoIcon} alt="" />
         </div>
         {/* right side */}
-        <div className="flex items-center left_info">
-          <img src={AddIcon} alt="" />
-          <h4 className="primary_clr text-2xl font-semibold px-2">ADD CARD</h4>
+        <div className="hidden lg:block xl:block">
+          <div className="flex items-center left_info">
+            <img src={AddIcon} alt="" />
+            <h4 className="primary_clr text-2xl font-semibold px-2">
+              ADD CARD
+            </h4>
+          </div>
         </div>
       </div>
       {/* cards lists */}

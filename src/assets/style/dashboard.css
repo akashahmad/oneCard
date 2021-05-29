@@ -24,6 +24,14 @@
 .dashboard_container
   .side_nav_container
   .sidenav_links_info_container
+  .links_text_container:hover
+  ~ .inActive_link {
+  background: #4349a9;
+  border-radius: 8px;
+}
+.dashboard_container
+  .side_nav_container
+  .sidenav_links_info_container
   .inActive_link:hover {
   background: #4349a9;
   border-radius: 8px;
@@ -44,6 +52,11 @@
 .dashboard_container .right_side_section_container .background_clr_sections {
   background: #f0eff5;
   height: 100%;
+}
+@media (max-width: 991px) and (min-width: 320px) {
+  .dashboard_container .right_side_section_container .background_clr_sections {
+    background: #333269 !important;
+  }
 }
 
 .dashboard_container .react-multi-carousel-list {
@@ -72,5 +85,65 @@
 @media (max-width: 991px) and (min-width: 320px) {
   .dashboard_container .overview_section_container .single_overview_box {
     width: 100%;
+  }
+}
+.dashboard_container .responsive_dashboard_container {
+  background: #333269;
+  padding: 10px;
+}
+.dashboard_container .responsive_dashboard_container .hamburger_container {
+  display: flex;
+  align-items: center;
+}
+.dashboard_container .responsive_dashboard_container .logo_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.dashboard_container .responsive_dashboard_container .logo_container img {
+  height: 50px;
+}
+
+/* SideNavigation */
+.dashboard_sidenav_links .das_sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.dashboard_sidenav_links .das_sidenav h6 {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.dashboard_sidenav_links .das_sidenav h6:hover {
+  color: #f1f1f1;
+}
+
+.dashboard_sidenav_links .das_sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .dashboard_sidenav_links .das_sidenav {
+    padding-top: 15px;
+  }
+  .dashboard_sidenav_links .das_sidenav h6 {
+    font-size: 18px;
   }
 }

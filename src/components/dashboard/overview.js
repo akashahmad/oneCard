@@ -54,7 +54,7 @@ const Overview = () => {
       {/* header */}
       <div className="add_card_header py-2 flex justify-between">
         {/* left-side */}
-        <div className="flex items-center left_info">
+        <div className="flex items-center left_info justify-center w-full lg:w-auto xl:w-auto lg:justify-start xl:justify-star">
           <h4 className="primary_clr text-2xl font-semibold px-2">Overview</h4>
           <img src={InfoIcon} alt="" />
         </div>
@@ -65,26 +65,29 @@ const Overview = () => {
         <div className="flex flex-col lg:flex-row xl:flex-row justify-center lg:justify-between xl:justify-between px-2 lg:flex-wrap xl:flex-wrap">
           {overviewLists?.map((single, index) => (
             <div
-              className="w-full single_overview_box py-3 rounded flex shadow my-6 px-2"
+              className="w-full single_overview_box py-3 rounded flex shadow my-2 lg:my-6 xl:my-6 px-2"
               key={index}
               style={{ background: `${single?.backgroundColor}` }}
             >
               {/* left-side */}
-              <div className="w-2/12 flex justify-center items-center">
+              <div
+                className="w-2/12 flex justify-center items-center 
+              "
+              >
                 <img src={single?.image} alt="" />
               </div>
               {/* right-side */}
               <div className="w-10/12">
-                <div className="w-full flex justify-between px-2">
-                  <h2 className="primary_clr text-lg font-semibold">
+                <div className="w-full flex justify-between px-3 items-center">
+                  <h2 className="primary_clr text-md xl:text-lg lg:text-lg font-semibold">
                     {single?.name}
                   </h2>
-                  <h2 className="primary_clr text-sm font-normal">
+                  <h2 className="primary_clr text-xs xl:text-sm lg:text-sm font-semibold">
                     {single?.percent}
                   </h2>
                 </div>
-                <div className="w-full px-2 py-2">
-                  <h2 className="primary_clr text-sm font-normal">
+                <div className="w-full px-3 py-2">
+                  <h2 className="primary_clr text-xs xl:text-sm lg:text-sm font-normal">
                     {single?.shortDescription}
                   </h2>
                 </div>

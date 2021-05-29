@@ -1,12 +1,22 @@
 import BlackLogo from "../../assets/images/Logo.png";
 import { withRouter } from "react-router-dom";
+import Hamburger from "../../assets/images/hamburgerBlue.png";
 
 const Header = (props) => {
-  let { history } = props;
+  let { history, setHomeSideNav } = props;
   return (
     <div className="header_container py-4">
       <div className="container mx-auto flex justify-center">
-        <div className="w-10/12 px-0 flex">
+        <div className="w-10/12 px-0 flex items-center">
+          {/* hamburger */}
+          <div className="block lg:hidden xl:hidden">
+            <div
+              className="hamburger_container"
+              onClick={() => setHomeSideNav(true)}
+            >
+              <img src={Hamburger} alt="" />
+            </div>
+          </div>
           {/* left side */}
           <div className="w-12/12 lg:w-8/12 xl:w-8/12 px-0 flex items-center w-full">
             {/* logo */}
