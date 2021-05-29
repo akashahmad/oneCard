@@ -5,6 +5,7 @@ import FreedomCard from "../../assets/images/chase-freedom-0829171.png";
 import Discover from "../../assets/images/discover.png";
 import Sapphire from "../../assets/images/sapphire.png";
 import Visa from "../../assets/images/visa.png";
+import { Tooltip } from "antd";
 
 const AddCard = () => {
   const responsive = {
@@ -35,7 +36,9 @@ const AddCard = () => {
         {/* left-side */}
         <div className="flex items-center left_info justify-center w-full lg:w-auto xl:w-auto lg:justify-start xl:justify-start">
           <h4 className="primary_clr text-2xl font-semibold px-2">CARDS</h4>
-          <img src={InfoIcon} alt="" />
+          <Tooltip title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor">
+            <img src={InfoIcon} alt="" />
+          </Tooltip>
         </div>
         {/* right side */}
         <div className="hidden lg:block xl:block">

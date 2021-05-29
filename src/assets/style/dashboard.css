@@ -62,6 +62,9 @@
 .dashboard_container .react-multi-carousel-list {
   padding: 20px 10px;
 }
+.add_card_container .ant-tooltip-inner {
+  background-color: #333269 !important;
+}
 .dashboard_container .add_card_header .left_info img {
   height: 22px;
 }
