@@ -1,5 +1,6 @@
 import InfoIcon from "../../assets/images/info.png";
 import { UpOutlined, DownOutlined } from "@ant-design/icons";
+import ShareIcon from "../../assets/images/link.png";
 
 const MissedRewards = (props) => {
   let { missedRewards, setMissedRewards } = props;
@@ -49,11 +50,11 @@ const MissedRewards = (props) => {
           </div>
           <div className="w-full bg-red-300 my-2 flex justify-between items-center">
             <div className="px-2">
-              <p>www.google.com</p>
+              <p className="text-1xl">www.google.com</p>
             </div>
             <div className="flex justify-end">
               <button className="primary_bg_dark_clr py-2 flex justify-center text-base text-white items-center px-5 text-sm">
-                Get Started
+                <img src={ShareIcon} alt="" />
               </button>
             </div>
           </div>

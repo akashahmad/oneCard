@@ -41,7 +41,7 @@ const Recomendations = (props) => {
           </div>
           <div className="flex justify-center py-5">
             <button className="primary_bg_dark_clr py-2 flex justify-center text-base text-white items-center px-12 text-1xl">
-              Get Started
+              Apply
             </button>
           </div>
         </div>
