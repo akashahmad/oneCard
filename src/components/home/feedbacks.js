@@ -9,8 +9,8 @@ const Feedbacks = () => {
     <div className="feedback_container">
       <div className="container mx-auto py-12">
         {/* title */}
-        <div className="text-center text-3xl primary_clr py-6">
-          What Our Client Say
+        <div className="text-center text-3xl primary_clr py-7 font-bold">
+          <h2>What Our Client Say</h2>
         </div>
         {/* box */}
         <Carousel
