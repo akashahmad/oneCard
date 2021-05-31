@@ -11,7 +11,7 @@ const Carousal = () => {
   return (
     <>
       <Carousel axis="vertical" autoPlay={true} infiniteLoop interval={2000}>
-      {/* <Carousel vertical={true}> */}
+        {/* <Carousel vertical={true}> */}
         {/* 1st carousal */}
         <div className="px-3 featured_list_container">
           {/* left side */}
