@@ -1,4 +1,5 @@
 import { Carousel } from "react-responsive-carousel";
+// import { Carousel } from "antd";
 import CarousalImg1 from "../../assets/images/Group27251.png";
 import CarousalImg2 from "../../assets/images/Group27252.png";
 import CarousalImg3 from "../../assets/images/Group27253.png";
@@ -10,6 +11,7 @@ const Carousal = () => {
   return (
     <>
       <Carousel axis="vertical" autoPlay={true} infiniteLoop interval={2000}>
+      {/* <Carousel vertical={true}> */}
         {/* 1st carousal */}
         <div className="px-3 featured_list_container">
           {/* left side */}

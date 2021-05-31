@@ -23,9 +23,9 @@
 
 .dashboard_container
   .side_nav_container
-  .sidenav_links_info_container
-  .links_text_container:hover
-  ~ .inActive_link {
+  /* .sidenav_links_info_container */
+  .sideNav_InActive_links:hover
+   .inActive_link {
   background: #4349a9;
   border-radius: 8px;
 }
@@ -59,6 +59,41 @@
   }
 }
 
+.dashboard_container .addCard_caroual_container img {
+  height: 145px;
+  width: 240px;
+}
+
+@media (max-width: 1220px) and (min-width: 1025px) {
+  .dashboard_container .addCard_caroual_container img {
+    height: 130px;
+    width: 190px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 600px) {
+  .dashboard_container .addCard_caroual_container img {
+    height: 125px;
+    width: 180px;
+  }
+}
+@media (max-width: 599px) and (min-width: 500px) {
+  .dashboard_container .addCard_caroual_container img {
+    height: 95px;
+    width: 150px;
+  }
+}
+@media (max-width: 499px) and (min-width: 360px) {
+  .dashboard_container .addCard_caroual_container img {
+    height: 80px;
+    width: 140px;
+  }
+}
+@media (max-width: 359px) and (min-width: 300px) {
+  .dashboard_container .addCard_caroual_container img {
+    height: 80px;
+    width: 130px;
+  }
+}
 .dashboard_container .react-multi-carousel-list {
   padding: 20px 10px;
 }
@@ -66,7 +101,7 @@
   background-color: #333269 !important;
 }
 .dashboard_container .add_card_header .left_info img {
-  height: 22px;
+  height: 16px;
 }
 .dashboard_container .overview_section_container .single_overview_box {
   width: 48%;
@@ -149,4 +184,14 @@
   .dashboard_sidenav_links .das_sidenav h6 {
     font-size: 18px;
   }
+}
+
+
+.ant-tooltip-inner {
+  text-align: center;
+  font-size: 13px;
+  background: #0f123f;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 0px;
 }

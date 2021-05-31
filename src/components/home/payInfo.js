@@ -4,7 +4,7 @@ import PaymentMethodImg from "../../assets/images/payment-method.png";
 
 const PayInfo = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto py-8">
       <div className="payInfo_cards_container py-12">
         {/* left side */}
         <div className="w-full w-3/12 flex flex-col items-center px-4">

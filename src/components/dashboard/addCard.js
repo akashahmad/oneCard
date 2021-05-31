@@ -12,7 +12,7 @@ const AddCard = () => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 4,
       //   breakpoint: { max: 1000, min: 464 },
       //   items: 4,
     },
@@ -21,12 +21,12 @@ const AddCard = () => {
       items: 4,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      breakpoint: { max: 1023, min: 510 },
+      items: 3,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
+      breakpoint: { max: 509, min: 0 },
+      items: 2,
     },
   };
   return (
@@ -35,23 +35,23 @@ const AddCard = () => {
       <div className="add_card_header py-2 flex justify-between">
         {/* left-side */}
         <div className="flex items-center left_info justify-center w-full lg:w-auto xl:w-auto lg:justify-start xl:justify-start">
-          <h4 className="primary_clr text-2xl font-semibold px-2">CARDS</h4>
-          <Tooltip title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor">
-            <img src={InfoIcon} alt="" />
+          <h4 className="primary_clr text-2xl font-semibold px-2 cursor-pointer">CARDS</h4>
+          <Tooltip placement="bottom" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor">
+            <img src={InfoIcon} alt="" className="cursor-pointer" />
           </Tooltip>
         </div>
         {/* right side */}
         <div className="hidden lg:block xl:block">
-          <div className="flex items-center left_info">
-            <img src={AddIcon} alt="" />
-            <h4 className="primary_clr text-2xl font-semibold px-2">
+          <div className="flex items-center left_info cursor-pointer">
+            <img src={AddIcon} alt=""  />
+            <h4 className="primary_clr text-lg font-bold fs_15 pt-1">
               ADD CARD
             </h4>
           </div>
         </div>
       </div>
       {/* cards lists */}
-      <Carousel responsive={responsive}>
+      <Carousel responsive={responsive} className="addCard_caroual_container">
         <div>
           <img src={FreedomCard} alt="" />
         </div>

@@ -11,7 +11,9 @@ const Home = (props) => {
 
   return (
     <div className="home_container">
-      {homeSideNav && <SideNav setHomeSideNav={setHomeSideNav} homeSideNav={homeSideNav} />}
+      {homeSideNav && (
+        <SideNav setHomeSideNav={setHomeSideNav} homeSideNav={homeSideNav} />
+      )}
       <ManagingCreditCard />
       <FeaturesComponent />
       <PayInfo />

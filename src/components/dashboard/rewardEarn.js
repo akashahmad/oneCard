@@ -1,6 +1,6 @@
 import InfoIcon from "../../assets/images/info.png";
 import Chart from "react-apexcharts";
-// import { COLOR_2 } from "constants/ChartConstant";
+import { Tooltip } from "antd";
 
 const RewardEarn = () => {
   const state = {
@@ -46,15 +46,17 @@ const RewardEarn = () => {
       {/* header */}
       <div className="add_card_header py-2 flex justify-between">
         {/* left-side */}
-        <div className="flex items-center left_info">
-          <h4 className="primary_clr text-xs xl:text-md lg:text-md font-semibold pr-2">
-            Missed Reward ($)
+        <div className="flex items-center left_info cursor-pointer">
+          <h4 className="primary_clr font-semibold pr-2 fs_15">
+            Reward Earned ($)
           </h4>
-          <img src={InfoIcon} alt="" />
+          <Tooltip placement="bottom" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor">
+            <img src={InfoIcon} alt="" />
+          </Tooltip>
         </div>
         {/* right side */}
-        <div className="flex items-center left_info">
-          <h4 className="primary_clr text-xs xl:text-md lg:text-md font-semibold px-2">
+        <div className="flex items-center left_info cursor-pointer">
+          <h4 className="primary_clr fs_15 font-semibold px-2">
             Total Earn:<span className="font-bold">$2000</span>
           </h4>
         </div>

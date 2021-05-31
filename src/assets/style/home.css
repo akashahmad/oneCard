@@ -13,33 +13,54 @@
     #8fb2be 99.64%
   );
   z-index: 1;
+  position: absolute;
+}
+
+@media (max-width: 991px) and (min-width: 320px) {
+  .managing_creditCard_container .bottom_bar_container {
+    background: linear-gradient(
+      90.66deg,
+      #94b7c3 0.5%,
+      rgba(79, 117, 128, 0.78) 29.86%,
+      #8fb2be 99.64%
+    );
+    z-index: 1;
+    position: relative;
+  }
 }
 
 .managing_creditCard_container .rounded_img_container img {
   height: 150px;
   position: absolute;
   margin: 40px 0px 0px -93px;
+  z-index: 11;
 }
 
 .managing_creditCard_container .right_side_cardsImg img {
   position: absolute;
-  height: 400px;
+  height: 430px;
   right: 0;
-  margin: -225px 110px 0px 0px;
+  z-index: 11;
+  margin: -230px 110px 0px 0px;
 }
 
 @media (max-width: 991px) and (min-width: 320px) {
   .home_container .managing_creditCard_container .right_side_cardsImg img {
     position: absolute;
-    height: 180px;
+    height: 215px;
     right: auto;
-    margin: -25px 0px 0px -84px;
+    margin: -18px 0px 0px -98px;
   }
 }
 
-.home_container .home_feature_container {
+/* .home_container .home_feature_container {
   background: #f0fbff;
+} */
+
+.home_container .home_feature_container .featured_list_container {
+  display: flex !important;
 }
+
 
 .home_container .payInfo_cards_container {
   display: flex;
@@ -146,8 +167,23 @@
   background: #fff;
 }
 
-.home_container .feedback_container .box_below_Carousal img {
+.home_container .feedback_container .box_below_Carousal .quotation_img {
   position: absolute;
+  width: 80px;
+  height: 80px;
+}
+.home_container
+  .feedback_container
+  .box_below_Carousal
+  .box_icon_container
+  img {
+  width: 80px;
+  height: 80px;
+}
+
+.feedback_container .feedbacks_carousal .slide.selected {
+  display: flex;
+  align-items: center;
 }
 
 .home_container .feedback_container ul.react-multi-carousel-track {

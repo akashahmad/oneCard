@@ -9,7 +9,7 @@ const Recomendations = (props) => {
       <div className="add_card_header py-2 flex justify-between px-3">
         {/* left-side */}
         <div className="flex items-center left_info">
-          <h4 className="primary_clr text-xs xl:text-md lg:text-md font-semibold pr-2">
+          <h4 className="primary_clr fs_15 font-semibold pr-2">
             Recomendations
           </h4>
         </div>
@@ -39,7 +39,7 @@ const Recomendations = (props) => {
               Best for you because: Flexible Redemption
             </p>
           </div>
-          <div className="flex justify-center py-5">
+          <div className="flex justify-center py-5"> 
             <button className="primary_bg_dark_clr py-2 flex justify-center text-base text-white items-center px-12 text-1xl">
               Apply
             </button>

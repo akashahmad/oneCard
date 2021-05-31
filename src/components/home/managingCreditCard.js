@@ -36,8 +36,8 @@ const ManagingCreditCard = () => {
       </div>
       {/* bottom bar*/}
       <div className="bottom_bar_container py-12 w-full ">
-        <div className="block lg:hidden xl:hidden">
-          <div className="flex justify-center pt-5">
+        <div className="block lg:hidden xl:hidden pt-5">
+          <div className="flex justify-center pt-12">
             <button className="primary_bg_dark_clr py-2 flex justify-center text-base text-white items-center px-12 text-1xl">
               Get Started
             </button>

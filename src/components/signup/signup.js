@@ -34,7 +34,7 @@ const SignUp = (props) => {
               </div>
             </div>
             {/* right side form */}
-            <div className="w-full lg:w-6/12 xl:w-6/12 flex flex-col items-center">
+            <div className="w-full lg:w-6/12 xl:w-6/12 flex flex-col items-center pt-8">
               {/* logo */}
               <div className="py-3">
                 <img src={BlackLogo} alt="" />
@@ -115,7 +115,14 @@ const SignUp = (props) => {
                       history.push("/login");
                     }}
                   >
-                    <span className="px-3">Sign Up</span>
+                    <span
+                      className="px-3 cursor-pointer"
+                      onClick={() => {
+                        history.push("/login");
+                      }}
+                    >
+                      Sign Up
+                    </span>
                   </button>
                 </div>
                 {/* already have an account text */}

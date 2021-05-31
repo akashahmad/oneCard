@@ -34,7 +34,7 @@ const Login = (props) => {
               </div>
             </div>
             {/* right side form */}
-            <div className="w-full lg:w-6/12 xl:w-6/12 flex flex-col items-center">
+            <div className="w-full lg:w-6/12 xl:w-6/12 flex flex-col items-center pt-8">
               {/* logo */}
               <div className="py-3">
                 <img src={BlackLogo} alt="" />
@@ -112,7 +112,14 @@ const Login = (props) => {
                   }}
                 >
                   Dont have account?{" "}
-                  <span className="font-medium primary_clr">SIGN UP</span>
+                  <span
+                    className="font-medium primary_clr cursor-pointer"
+                    onClick={() => {
+                      history.push("/login");
+                    }}
+                  >
+                    SIGN UP
+                  </span>
                 </p>
                 {/* info and icon */}
                 <div className="flex justify-center security_icon_container py-4">

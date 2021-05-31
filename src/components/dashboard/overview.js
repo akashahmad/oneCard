@@ -4,6 +4,7 @@ import Groceries from "../../assets/images/Vector.png";
 import Shopping from "../../assets/images/shopping.png";
 import Dinning from "../../assets/images/Dinning.png";
 import Travel from "../../assets/images/airplane.png";
+import { Tooltip } from "antd";
 
 const Overview = () => {
   const overviewLists = [
@@ -54,9 +55,11 @@ const Overview = () => {
       {/* header */}
       <div className="add_card_header py-2 flex justify-between">
         {/* left-side */}
-        <div className="flex items-center left_info justify-center w-full lg:w-auto xl:w-auto lg:justify-start xl:justify-star">
+        <div className="flex items-center left_info justify-center w-full lg:w-auto xl:w-auto lg:justify-start xl:justify-star cursor-pointer">
           <h4 className="primary_clr text-2xl font-semibold px-2">Overview</h4>
-          <img src={InfoIcon} alt="" />
+          <Tooltip placement="bottom" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor">
+            <img src={InfoIcon} alt="" />
+          </Tooltip>
         </div>
       </div>
       {/* Overview lists */}

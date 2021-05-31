@@ -37,16 +37,16 @@ const SideNav = (props) => {
             </div>
           </div>
           {/* feedback */}
-          <div className="flex flex-col items-center justify-center py-2 cursor-pointer">
+          <div className="flex flex-col items-center justify-center py-2 cursor-pointer sideNav_InActive_links">
             <div className="inActive_link px-3 py-3">
               <img src={Feedback} alt="" />
             </div>
             <div>
-              <h5 className="text-sm text-white py-4 font-normal">Profile</h5>
+              <h5 className="text-sm text-white py-4 font-normal">FeedBack</h5>
             </div>
           </div>
           {/* setting */}
-          <div className="flex flex-col items-center justify-center py-2 cursor-pointer">
+          <div className="flex flex-col items-center justify-center py-2 cursor-pointer sideNav_InActive_links">
             <div className="inActive_link px-3 py-3">
               <img src={Setting} alt="" />
             </div>
@@ -57,7 +57,7 @@ const SideNav = (props) => {
         </div>
         {/* logout */}
         <div
-          className="flex flex-col items-center justify-center py-2 sidenav_links_info_container cursor-pointer"
+          className="flex flex-col items-center justify-center py-2 sidenav_links_info_container cursor-pointer sideNav_InActive_links"
           onClick={() => {
             history.push("/");
           }}

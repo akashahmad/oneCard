@@ -1,6 +1,7 @@
 import InfoIcon from "../../assets/images/info.png";
 import { UpOutlined, DownOutlined } from "@ant-design/icons";
 import ShareIcon from "../../assets/images/link.png";
+import { Tooltip } from "antd";
 
 const MissedRewards = (props) => {
   let { missedRewards, setMissedRewards } = props;
@@ -9,11 +10,13 @@ const MissedRewards = (props) => {
       {/* header */}
       <div className="add_card_header py-2 flex justify-between">
         {/* left-side */}
-        <div className="flex items-center left_info">
-          <h4 className="primary_clr text-xs xl:text-md lg:text-md font-semibold pr-2">
+        <div className="flex items-center left_info cursor-pointer">
+          <h4 className="primary_clr fs_15 font-semibold pr-2 cursor-pointer">
             Missed Reward ($)
           </h4>
-          <img src={InfoIcon} alt="" />
+          <Tooltip placement="bottom" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor">
+            <img src={InfoIcon} alt="" />
+          </Tooltip>
         </div>
         {/* right side */}
         <div className="block lg:hidden xl:hidden">
@@ -46,7 +49,7 @@ const MissedRewards = (props) => {
             </p>
           </div>
           <div className="pt-5">
-            <h4 className="primary_clr text-md font-semibold pr-2">Share:</h4>
+            <h4 className="primary_clr fs_15 font-semibold pr-2 cursor-pointer">Share:</h4>
           </div>
           <div className="w-full bg-red-300 my-2 flex justify-between items-center">
             <div className="px-2">

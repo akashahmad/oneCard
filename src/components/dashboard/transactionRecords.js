@@ -47,10 +47,10 @@ const Records = (props) => {
 
   return (
     <div className="add_card_container recent_transaction_container bg-white rounded w-full lg:px-10 xl:px-10 py-6 h-full">
-      <div className="add_card_header py-2 flex justify-between px-3">
+      <div className="add_card_header py-2 flex justify-between px-2">
         {/* left-side */}
         <div className="flex items-center left_info w-full">
-          <h4 className="primary_clr text-xs xl:text-2xl lg:text-2xl font-semibold px-2">
+          <h4 className="primary_clr text-md xl:text-2xl lg:text-2xl font-semibold px-2">
             Recent Transactions
           </h4>
         </div>
