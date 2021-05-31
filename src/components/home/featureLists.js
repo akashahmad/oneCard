@@ -10,7 +10,13 @@ import Carousal3Logo from "../../assets/images/credit-card-2.png";
 const Carousal = () => {
   return (
     <>
-      <Carousel axis="vertical" autoPlay={true} infiniteLoop interval={2000}>
+      <Carousel
+        axis="vertical"
+        autoPlay={true}
+        infiniteLoop
+        interval={2000}
+        showThumbs={false}
+      >
         {/* <Carousel vertical={true}> */}
         {/* 1st carousal */}
         <div className="px-3 featured_list_container">

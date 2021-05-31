@@ -18,6 +18,7 @@ const Feedbacks = () => {
           interval={2000}
           autoPlay={true}
           infiniteLoop={true}
+          showThumbs={false}
         >
           {/* 1st */}
           <div className="box_below_Carousal py-5 px-5">
